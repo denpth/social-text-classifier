@@ -1,0 +1,13 @@
+{
+  "verification_date": "2026-10-15",
+  "model_sha256": "d7c6cbf96f8cee2dd4f1792c06473f6373e5b574e2da862a440f88c67b8b9f84",
+  "vocabulary_sha256": "23421a1190c30beb730b80927835a6024a26856965e58b35e4e20cf61210e1fa",
+  "tensorflow": "2.21.0",
+  "max_length": 113,
+  "vocabulary_entries": 32576,
+  "synthetic_text_cases": 7,
+  "new_sequence_matches_notebook_contract": true,
+  "cases_with_different_legacy_pre_padding": 6,
+  "max_absolute_prediction_difference": 0.0,
+  "scope": "Historical model and matching vocabulary load successfully. Shared post/post inference matches notebook-style direct model evaluation on seven synthetic text cases. This is an integration test, not accuracy, calibration, fairness, or deployment validation."
+}

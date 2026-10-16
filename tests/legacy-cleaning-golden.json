@@ -1,0 +1,83 @@
+[
+  {
+    "text": "HELLO!!! @person https://example.com",
+    "tokens": [
+      "hello",
+      "<ALLCAPS>",
+      "!",
+      "<",
+      "repeat",
+      "<ALLCAPS>",
+      ">",
+      "<",
+      "user",
+      "<ALLCAPS>",
+      ">",
+      "<",
+      "url",
+      "<ALLCAPS>",
+      ">"
+    ]
+  },
+  {
+    "text": "I can’t believe it :)",
+    "tokens": [
+      "i",
+      "cant",
+      "believe",
+      "it",
+      "<",
+      "smile",
+      "<ALLCAPS>",
+      ">"
+    ]
+  },
+  {
+    "text": "I don't like 123 tests",
+    "tokens": [
+      "i",
+      "dont",
+      "like",
+      "<NUMBER>",
+      "test"
+    ]
+  },
+  {
+    "text": "soooo cool 😄",
+    "tokens": [
+      "so",
+      "<",
+      "elong",
+      "<ALLCAPS>",
+      ">",
+      "cool",
+      "grinning_face_with_smiling_eyes"
+    ]
+  },
+  {
+    "text": "&amp; <3",
+    "tokens": [
+      "&",
+      "<",
+      "heart",
+      "<ALLCAPS>",
+      ">"
+    ]
+  },
+  {
+    "text": "",
+    "tokens": []
+  },
+  {
+    "text": "Multiple\nlines???",
+    "tokens": [
+      "multiple",
+      "line",
+      "?",
+      "<",
+      "repeat",
+      "<ALLCAPS>",
+      ">"
+    ]
+  }
+]

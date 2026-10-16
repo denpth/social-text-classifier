@@ -1,0 +1,28 @@
+name: NLP CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Python syntax
+        run: python -m py_compile inference.py
+      - name: Validate notebook and model artifacts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          with Path('D803.ipynb').open(encoding='utf-8') as handle:
+              data = json.load(handle)
+          assert data.get('cells'), 'Notebook contains no cells'
+          assert Path('Models').is_dir(), 'Models directory missing'
+          assert Path('snapshot_data').is_dir(), 'Preprocessing snapshot directory missing'
+          print('Notebook and artifact structure verified.')
+          PY
